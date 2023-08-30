@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>watch</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.3/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div id="stopWatchCounter" class="text-center">
+      <h1 class="text-6xl text-cyan-500 font-bold">Stop Watch</h1>
+    </div>
+
+    <div class="text-center">
+      <div>
+        <p
+          id="counter"
+          class="text-4xl text-black font-medium mt-5 mb-5 text-center"
+        >
+          00:00:00
+        </p>
+      </div>
+      <div>
+        <button onclick="startTimer()" id="start-btn" class="btn">Start</button>
+        <button onclick="stopTimer()" id="stop-btn" class="btn">Stop</button>
+        <button onclick="resetTimer()" id="reset-btn" class="btn b">
+          Reset
+        </button>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
